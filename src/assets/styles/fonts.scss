@@ -1,0 +1,41 @@
+@import "variables";
+// Include fonts
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('#{$fontsPath}/OpenSans-Regular.woff2') format('woff2'),
+    url('#{$fontsPath}/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url('#{$fontsPath}/OpenSans-Bold.woff2') format('woff2'),
+    url('#{$fontsPath}/OpenSans-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Semibold';
+    src: url('#{$fontsPath}/OpenSans-Semibold.woff2') format('woff2'),
+    url('#{$fontsPath}/OpenSans-Semibold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url('#{$fontsPath}/OpenSans-Light.woff2') format('woff2'),
+    url('#{$fontsPath}/OpenSans-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Italic';
+    src: url('#{$fontsPath}/OpenSans-Italic.woff2') format('woff2'),
+    url('#{$fontsPath}/OpenSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

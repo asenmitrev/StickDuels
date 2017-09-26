@@ -1,0 +1,43 @@
+@import '~assets/styles/variables';
+$menuBtn: menu-button;
+
+.#{$menuBtn} {
+    &__wrapper {    
+        width: $headerHeight;
+        height: $headerHeight;
+    }
+
+    &__container {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    &__bar1, &__bar2, &__bar3 {
+        width: 2.8rem;
+        height: 0.4rem;
+        background-color: $secondaryTextColor;
+        margin: 0.6rem 0;
+        transition: $defaultTransitionTime;
+    }
+
+    &--clicked {
+        .#{$menuBtn} {
+            /* Rotate first bar */
+            &__bar1 {
+                -webkit-transform: rotate(-45deg) translate(-0.7rem, 0.7rem) ;
+                transform: rotate(-45deg) translate(-0.7rem, 0.7rem) ;
+            }
+
+            /* Fade out the second bar */
+            &__bar2 {
+                opacity: 0;
+            }
+
+            /* Rotate last bar */
+            &__bar3 {
+                -webkit-transform: rotate(45deg) translate(-0.7rem, -0.7rem) ;
+                transform: rotate(45deg) translate(-0.7rem, -0.7rem) ;
+            }
+        }
+    }
+}

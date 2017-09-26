@@ -1,0 +1,41 @@
+@import '~assets/styles/variables';
+
+:host {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    padding-top: $headerHeight;
+    display: flex;
+    flex-direction: column;
+    background: $sideMenuBackgroundColor;
+    left: -300px;
+    z-index: 1200;
+    transition: $defaultTransitionTime;
+
+    &.is-open {
+        left: 0;        
+    }
+}
+
+.sidemenu {
+    &__list {
+        padding: 5rem 0;
+    }
+    &__item {
+        padding-left: 2rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $secondaryTextColor;
+        font-size: $fontSizeTitle;
+        display: block;
+        padding: 2rem 0;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        &.is-active {
+            color: $activeSidebarTextColor;
+        }
+    }
+}

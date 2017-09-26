@@ -1,0 +1,7 @@
+@import '~assets/styles/variables';
+:host { 
+    width: 100%;
+    height: $headerHeight;
+    background: $headerBackgroundColor;
+    z-index: 1500;
+}

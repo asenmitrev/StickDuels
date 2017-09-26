@@ -1,0 +1,81 @@
+// Contains color, fonts, font sizes, etc.
+$imagesPath: '~/assets/images';
+$fontsPath: '~/assets/fonts';
+// Define font family variables
+$fontRegular: 'OpenSans-Regular',
+sans-serif;
+$fontSemibold: 'OpenSans-Semibold',
+sans-serif;
+$fontBold: 'OpenSans-Bold',
+sans-serif;
+$fontLight: 'OpenSans-Light',
+sans-serif;
+$fontItalic: 'OpenSans-Italic',
+sans-serif;
+// Define font sizes
+$fontSizeSmall: 1.2rem;
+$fontSizeRegular: 1.4rem;
+$fontSizeMedium: 1.6rem;
+$fontSizeTitle: 2rem;
+$fontSizeBig: 2.5rem;
+$fontSizeHeading: 3rem;
+$fontSizeHuge: 5rem;
+// Define colors
+$brown: #5E412F;
+$turqouise: #78C0A8;
+$orange: #F07818;
+$gold: #F0A830;
+$yellow: #FCEBB6;
+$ligntYellow: #FFFBF0;
+
+$primaryTextColor: #222222;
+$secondaryTextColor: $ligntYellow;
+$primaryBackgroundColor: $ligntYellow;
+// $secondaryBackgroundColor: $ligntYellow;
+$sideMenuBackgroundColor: $gold;
+$headerBackgroundColor: $turqouise;
+$overlayBackgroundColor: rgba(0, 0, 0, 0.2);
+$activeSidebarTextColor: $yellow;
+//old// GOAL-> remove
+$labelTextColor: #7d7d7d;
+$tableLabelColor: #666;
+$errorTextColor: #dd0231;
+$inputTextColor: #000;
+$inputPlaceholderTextColor: rgba(0, 0, 0, .5);
+$buttonDisableTextColor: rgba(0, 128, 199, .5);
+$labelDisabledColor: rgba(34, 34, 2, .5);
+$secondaryBackgroundColor: #f4f6f9;
+$modalOverlayBackgroundColor: rgba(0, 0, 0, .3);
+$sidebarOverlayBackgroundColor: rgba(0, 0, 0, .2);
+$headerNavBackgroundColor: #f8f9fc;
+$primaryBorderColor: #d9dfe9;
+$disableBorderColor: rgba(217, 223, 233, .8);
+$tableBorder: #eee;
+$toastBorderColor: #bfcbdf;
+$inputBorderColor: #e6e6e6;
+$infoColor: #1eb0ff;
+$warningColor: #f89406;
+
+$headerHeight: 60px;
+
+$defaultTransitionTime: .3s;
+//shadows-elevations (taken from material design)
+$shadowElevationSmall: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
+$shadowElevationBig: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
+
+$padding-default: 1.5rem;
+$margin-default: 1.5rem;
+$margin-big: 5rem;
+$padding-big: 5rem;
+$margin-medium: 3rem;
+$padding-medium: 3rem;
+$margin-small: 1rem;
+$padding-small: 1rem;
+
+//mediaSwitches
+$media-xs-end: 767px;
+$media-sm: 768px;
+$media-sm-end: 991px;
+$media-md: 992px;
+$media-md-end: 1299px;
+$media-lg: 1300px;

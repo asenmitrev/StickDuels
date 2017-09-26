@@ -1,0 +1,24 @@
+@import '~assets/styles/variables';
+
+:host {
+    flex-direction: column;
+}
+
+.sidebar {
+    &__overlay {
+        background: $overlayBackgroundColor;
+        left: 0;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        opacity: 0;
+        transition: $defaultTransitionTime;
+        width: 100%;
+        z-index: -1000;
+
+        &.is-open {
+            opacity: 1;
+            z-index: 1000;
+        }
+    }
+}

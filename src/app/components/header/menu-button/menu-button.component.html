@@ -1,0 +1,7 @@
+<div class="menu-button__wrapper row row--no-margin middle-xs center-xs">
+  <div class="menu-button__container" (click)="toggleButton()" [ngClass]="{'menu-button--clicked': uiStateStore.sideMenuOpen | async }">
+    <div class="menu-button__bar1"></div>
+    <div class="menu-button__bar2"></div>
+    <div class="menu-button__bar3"></div>
+  </div>
+</div>
