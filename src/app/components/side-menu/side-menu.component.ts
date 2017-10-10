@@ -1,3 +1,4 @@
+import { AuthService } from './../../shared/services/auth/auth.service';
 import { Component, OnInit, HostBinding, OnDestroy } from '@angular/core';
 import { Subscription } from "rxjs/Subscription";
 import { UiStateStore } from "../../shared/services/ui-state-store/ui-state-store.service";
@@ -10,7 +11,7 @@ import { UiStateStore } from "../../shared/services/ui-state-store/ui-state-stor
 export class SideMenuComponent implements OnInit, OnDestroy {
   private sideMenuOpenSubscription: Subscription;
 
-  constructor(private uiStateStore: UiStateStore) { }
+  constructor(private uiStateStore: UiStateStore, private authService : AuthService) { }
 
   @HostBinding('class.is-open') isMenuOpen: boolean = false;
 
@@ -21,6 +22,11 @@ export class SideMenuComponent implements OnInit, OnDestroy {
       .subscribe(isMenuOpen => {
         this.isMenuOpen = isMenuOpen;
       });
+  }
+
+  logout() {
+    this.authService.logout();
+    this.uiStateStore.closeSideMenu()
   }
 
   ngOnDestroy() {

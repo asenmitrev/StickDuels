@@ -1,0 +1,31 @@
+@import '~assets/styles/variables';
+
+.home {
+    &__button {
+        font-size: $fontSizeHeading;
+        padding: 2rem;
+        margin: 2rem 0;
+        cursor: pointer;
+
+        &-label {
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        &--fight {
+            background: $orange;
+        }
+
+        &--profile {
+            background: $turqouise;
+        }
+    }
+
+    &__image-container {
+        height: 30rem;
+
+        & > img {
+            width: 100%;
+        }
+    }
+}

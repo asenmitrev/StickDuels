@@ -1,0 +1,18 @@
+@import '~assets/styles/variables';
+
+.button {
+    background: none;
+    border: 2px dashed $labelTextColor;
+    color: $primaryTextColor;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $fontBold;
+    font-size: $fontSizeRegular;
+    height: $buttonHeight;
+    line-height: $buttonHeight;
+    min-width: 15rem;
+    padding: 0 $buttonSidePadding;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}

@@ -34,6 +34,7 @@
         text-decoration: none;
         display: flex;
         align-items: center;
+        
         &.is-active {
             color: $activeSidebarTextColor;
         }

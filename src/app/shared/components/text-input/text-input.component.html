@@ -1,0 +1,18 @@
+<input type="text" 
+  #control="ngModel"
+  [id]="name" 
+  [(ngModel)]="value" 
+  [name]="name"
+  [placeholder]=[placeholder]
+  [required]="required"
+  [readonly]="readonly"
+  [pattern]="pattern"
+  [maxlength]="maxlength"
+  [minlength]="minlength"
+  [ngClass]="{ 'non-empty': _innerValue && _innerValue !== ''}"
+  (focus)="focus()"
+  (blur)="blur()"
+  (input)="input($event)"
+>
+
+<label>{{label}}</label>

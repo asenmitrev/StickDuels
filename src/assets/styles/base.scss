@@ -30,52 +30,19 @@ sd-root {
     flex-direction: column;
 }
 
-// Text styling
-.text {
-    &--bold {
-        font-family: $fontBold !important;
-    }
-    &--semibold {
-        font-family: $fontSemibold !important;
-    }
-    &--center {
-        text-align: center !important;
-    }
-    &--left {
-        text-align: left !important;
-    }
-    &--right {
-        text-align: right !important;
-    }
-    &--justify {
-        text-align: justify;
-    }
-    &--uppercase {
-        text-transform: uppercase !important;
-    }
-    &--capitalize {
-        text-transform: capitalize !important;
-    }
-    &--ellipsis {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        width: 100%;
-    }
-    &--italic {
-        font-family: $fontItalic !important;
-    }
-    &--word-break {
-        word-wrap: break-word !important;
-    }
-    &--word-wrap {
-        word-break: break-word !important;
-    }
-    &--pre-wrap {
-        white-space: pre-wrap !important;
-    }
+a {
+    color: $primaryTextColor;
+    text-decoration: none;
 }
 
-.cursor--pointer {
-    cursor: pointer !important;
+// Headings
+.heading {
+    font-family: $fontLight;
+    font-size: $fontSizeHeading;
+    margin-top: 2rem;
+    margin-bottom: 3.5rem;
+
+    &--big {
+        font-size: $fontSizeHuge;
+    }
 }

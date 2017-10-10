@@ -27,20 +27,24 @@ $orange: #F07818;
 $gold: #F0A830;
 $yellow: #FCEBB6;
 $ligntYellow: #FFFBF0;
+$gray: #a7adba;
+$pink: #ffabab;
 
 $primaryTextColor: #222222;
-$secondaryTextColor: $ligntYellow;
+$secondaryTextColor: $yellow;
 $primaryBackgroundColor: $ligntYellow;
 // $secondaryBackgroundColor: $ligntYellow;
 $sideMenuBackgroundColor: $gold;
 $headerBackgroundColor: $turqouise;
 $overlayBackgroundColor: rgba(0, 0, 0, 0.2);
-$activeSidebarTextColor: $yellow;
+$activeSidebarTextColor: $ligntYellow;
+$inputTextColor: $primaryTextColor;
+$inputBackgroundColor: transparent;
+$labelTextColor: #757575;
+$labelTextColorActive: #666;
+
 //old// GOAL-> remove
-$labelTextColor: #7d7d7d;
-$tableLabelColor: #666;
 $errorTextColor: #dd0231;
-$inputTextColor: #000;
 $inputPlaceholderTextColor: rgba(0, 0, 0, .5);
 $buttonDisableTextColor: rgba(0, 128, 199, .5);
 $labelDisabledColor: rgba(34, 34, 2, .5);
@@ -56,7 +60,9 @@ $inputBorderColor: #e6e6e6;
 $infoColor: #1eb0ff;
 $warningColor: #f89406;
 
-$headerHeight: 60px;
+$headerHeight: 6rem;
+$buttonHeight: 4rem;
+$buttonSidePadding: 0.5rem;
 
 $defaultTransitionTime: .3s;
 //shadows-elevations (taken from material design)

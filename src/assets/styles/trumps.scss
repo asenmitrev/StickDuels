@@ -1,0 +1,83 @@
+.margin {
+    &__bottom--medium {
+        margin-bottom: 1.5rem;
+    }
+
+    &__top--medium {
+        margin-top: 1.5rem;
+    }
+
+    &__left--medium {
+        margin-left: 1.5rem;
+    }
+
+    &__right--medium {
+        margin-right: 1.5rem;
+    }
+
+    &__bottom--large {
+        margin-bottom: 4rem;
+    }
+
+    &__top--large {
+        margin-top: 4rem;
+    }
+
+    &__left--large {
+        margin-left: 4rem;
+    }
+
+    &__right--large {
+        margin-right: 4rem;
+    }
+}
+
+// Text styling
+.text {
+    &--bold {
+        font-family: $fontBold !important;
+    }
+    &--semibold {
+        font-family: $fontSemibold !important;
+    }
+    &--center {
+        text-align: center !important;
+    }
+    &--left {
+        text-align: left !important;
+    }
+    &--right {
+        text-align: right !important;
+    }
+    &--justify {
+        text-align: justify;
+    }
+    &--uppercase {
+        text-transform: uppercase !important;
+    }
+    &--capitalize {
+        text-transform: capitalize !important;
+    }
+    &--ellipsis {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+    }
+    &--italic {
+        font-family: $fontItalic !important;
+    }
+    &--word-break {
+        word-wrap: break-word !important;
+    }
+    &--word-wrap {
+        word-break: break-word !important;
+    }
+    &--pre-wrap {
+        white-space: pre-wrap !important;
+    }
+}
+
+.cursor--pointer {
+    cursor: pointer !important;
+}

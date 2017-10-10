@@ -1,0 +1,11 @@
+<div class="container">
+  <form #form="ngForm" class="col-sm-6 col-sm-offset-3">
+    <h1 class="heading">Login/Register</h1>
+    <sd-text-input label="Username" formReference="form" name="username" ngModel required></sd-text-input>
+    <sd-password-input label="Password" formReference="form" name="password" ngModel required></sd-password-input>
+    <div class="row row--no-margin row--no-padding between-sm around-xs login-buttons">
+      <button class="button margin__bottom--medium" (click)="submit(form, true)">Login</button>
+      <button class="button" (click)="submit(form, false)">Register</button>
+    </div>
+  </form>
+</div>
